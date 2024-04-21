@@ -1,0 +1,211 @@
+* {
+  font-family: Raleway;
+  font-weight: bold;
+}
+
+/* general style of the hader element*/
+header {
+  top: 0;
+  left: 0; 
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   background-color: rgba(217, 213, 219, 0.322); 
+}
+
+/* style of the "South America" at the top left */
+ #header-text-container { 
+   position: absolute; 
+   top: 13px;
+  left: 50px;
+  font-size: 15px;
+  color: rebeccapurple ;
+  
+} 
+/* style of the leaf icon at the top left */
+#top-icon-container {
+  position: absolute;
+    top: 35px;
+    left: 13px;
+    width: 35px;
+    z-index: 5;
+    .fa{
+      color: rgb(30, 107, 41);
+    }
+}
+/* style of hero image container */
+.hero-container {
+    width: 90%;
+    margin: 0 auto;
+    
+}
+.hero-image {
+    width: 100%;
+    height: 60vh; 
+    border-radius: 5%;
+    opacity: 0.8;
+}
+/* style of the large "South America" below hero image */
+.home-header {
+ padding: 20px;
+ padding-bottom: 10px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: -1px;
+  margin-top: -80px;
+  color: rebeccapurple;
+}
+/* style of the paragraph below large "South America */
+.home-header p{
+  padding-top: 20px;
+  font-family: Raleway; 
+  font-weight: 500; 
+  font-size: 25px; 
+  align-items: center; 
+  color: rgb(129, 126, 126);
+  margin-top: -80px;
+  margin-right: 90px;
+  margin-left: 90px;
+  margin-bottom: 30px;
+}
+
+/* style of navigation bar at header */
+nav ul {
+  list-style: none;
+ margin: 0;
+padding: 0; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 700px;
+  font-family: Raleway;
+  font-weight: bold;
+}
+/* style of each element in nav bar */
+.nav-link {
+  color: rgb(177, 30, 30);
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  transition: all 0.1s ease-in-out;
+}
+/* change in nav bar when mouse hovers */
+.nav-link:hover {
+  color: rgb(97, 144, 185);
+  cursor: pointer;
+}
+
+.horizontal-line {
+  border: none;
+  height: 2px;
+  background-color: black;
+  width: 100%;
+}
+/* style of the whole Destinations container */
+#destinations {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: -60px;
+  font-family: Raleway;
+  font-weight: bold;
+}
+/* style of each box in "Destinations" */
+.place {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+/* scale of the zooming effect when hover over images done by js */
+.place.zoomed {
+  transform: scale(1.1);
+}
+/* style of each country image */
+.place img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+/* style for county names*/
+.place h3 {
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-family: Raleway;
+  font-weight: bold;
+}
+/* style for country description */
+.place p {
+  font-size: 14px;
+  color: #555555;
+}
+/*rule to scroll smoothly when nav bar buttons pressed */
+html {
+  scroll-behavior: smooth;
+}
+
+#top-sites {
+  margin-top: -50px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.popular-sites img {
+  width: 300px;
+  height: 200px;
+  border-radius: 200px;
+}
+.popular-sites{
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  
+}
+.popular-sites h3{
+  margin-left: 40px;
+}
+#planYourTrip-Contact{
+  
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  position: relative;
+  text-align: left;
+   
+  /* Adds a vertical line to divide the two last divs */
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1px; 
+    background-color: black; 
+    left: 46%; 
+  }
+}
+/* initial colour of the icons in contact section */
+.fa {
+  color: rgb(196, 58, 161);
+}
+/* icons change colour when hover */
+.fa:hover {
+  color: rgb(128, 204, 65);
+}
+/* style of contact form in contact section */
+.contact-form textarea {
+   display: flex; 
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 5px;
+  height: 100px;
+}
+

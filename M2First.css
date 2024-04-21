@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#background-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.content {
+  font-family: 'Roboto', sans-serif;
+  position:relative;
+  z-index: 1; 
+  text-align: center;
+  color: #fff;
+  margin: 100px;
+  opacity: 0;
+  animation: fade-in 1s ease-in-out 2s forwards;
+}
+.content button {
+  border: none;
+  color: black;
+  background-color: rgba(240, 255, 255, 0.349);
+  border-radius: 10px;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  margin: 30px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.content button:hover{
+  background-color: azure;
+  border: black;
+  
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 2;
+  }
+}
